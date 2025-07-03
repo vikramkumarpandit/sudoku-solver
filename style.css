@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #eef2f3, #7491a8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  margin: 60px 0 20px;
+  size: 50px;
+  color: #333;
+}
+
+#sudoku-board {
+  display: grid;
+  grid-template-columns: repeat(9, 100px);
+  grid-template-rows: repeat(9, 100px);
+  gap: 0;
+  border: 4px solid #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#sudoku-board input {
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  text-align: center;
+  border: 1px solid #afa4a4;
+  outline: none;
+  background-color: #eeeee8;
+  font-weight: bold;
+  color: #210522;
+}
+
+#sudoku-board input:focus {
+  background-color: #bcc0a8;
+}
+
+.buttons {
+  margin: 25px;
+}
+
+button {
+  padding: 24px 50px;
+  margin: 10px;
+  border: none;
+  font-size: 32px;
+  font-weight: bold;
+  background-color: #42ce47;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:nth-child(2) {
+  background-color: #f44336;
+}
+
+button:nth-child(2):hover {
+  background-color: #d32f2f;
+}
